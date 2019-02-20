@@ -10,10 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
-	$(.likeBtn).click(recordLike);
+	$(".likeBtn").click(recordLike);
 }
 
 function recordLike(e) {
 	e.preventDefault();
-	gtag("send", "event", "like", "click");
+	gtag("create", "UA-134838812-1", "auto");
+	gtag("event", "click", {"event-category": "like"});
 }
