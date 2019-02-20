@@ -10,8 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
-
-
+	$(.likeBtn).click(recordLike);
 }
 
 function recordLike(e) {
