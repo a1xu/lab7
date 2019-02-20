@@ -10,4 +10,11 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+
+
+}
+
+function recordLike(e) {
+	e.preventDefault();
+	gtag("send", "event", "like", "click");
 }
