@@ -15,6 +15,6 @@ function initializePage() {
 
 function recordLike(e) {
 	e.preventDefault();
-	gtag("create", "UA-134838812-1", "auto");
-	gtag("event", "click", {"event-category": "like"});
+	ga("create", "UA-134838812-1", "auto");
+	ga("send", "event", "like", "click");
 }
